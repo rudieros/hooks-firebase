@@ -1,0 +1,50 @@
+{
+  "name": "hooks-firebase",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^3.9.0",
+    "@material-ui/icons": "^3.0.2",
+    "@material-ui/styles": "^3.0.0-alpha.9",
+    "class-validator": "^0.9.1",
+    "firebase": "^5.8.5",
+    "history": "4.7.2",
+    "react": "16.8.0",
+    "react-dom": "16.8.0",
+    "react-router": "4.3.1",
+    "react-router-dom": "4.3.1",
+    "react-scripts": "2.1.3",
+    "styled-components": "^4.1.3",
+    "typesafe-actions": "3.0.0",
+    "typescript": "3.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "NODE_ENV=development && yarn build && yarn run s3-website deploy --config-file .s3-website.development.json",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@types/classnames": "^2.2.7",
+    "@types/firebase": "^3.2.1",
+    "@types/history": "^4.7.2",
+    "@types/jest": "23.3.13",
+    "@types/node": "10.12.18",
+    "@types/react-dom": "16.0.11",
+    "@types/react-router-dom": "^4.3.1",
+    "@types/styled-components": "^4.1.6",
+    "s3-website": "^3.3.0",
+    "tslint": "^5.13.1",
+    "tslint-eslint-rules": "^5.4.0"
+  }
+}
